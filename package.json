@@ -1,0 +1,28 @@
+{
+  "name": "deno",
+  "version": "1.0.0",
+  "description": "Test task",
+  "main": "server.ts",
+  "scripts": {
+    "start-server": "deno run --allow-net server.ts",
+    "start-client":"npm run start --prefix front",
+    "start":"concurrently \"npm run start-server\" \"npm run start-client\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ressbill/react-deno.git"
+  },
+  "keywords": [
+    "react",
+    "mysql",
+    "deno",
+    "graphql"
+  ],
+  "author": "artur grigorian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ressbill/react-deno/issues"
+  },
+  "homepage": "https://github.com/ressbill/react-deno#readme"
+}
