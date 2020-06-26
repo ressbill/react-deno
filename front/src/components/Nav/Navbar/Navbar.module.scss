@@ -1,0 +1,32 @@
+.Navbar {
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  max-width: 250px;
+  transition: transform 0.22s ease-in;
+  background-color: #ced4da;
+  padding: 2rem 0;
+  color: #000;
+  ul {
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    li {
+      font-weight: bold;
+      padding: 15px;
+      background: linear-gradient(120deg, transparent 0%, transparent 50%, #17a2b8 50%) ;
+      background-size: 220%;
+      transition: all 0.10s ease-in;
+      &:hover,&:active {
+      background-position: 100%;
+      color: #ced4da;
+      }
+    }
+  }
+}
+.Navbar.close {
+  transform: translateX(-300px);
+}
